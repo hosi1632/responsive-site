@@ -1,0 +1,172 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: #fff;
+$subColor: #000;
+$keyColor: #123;
+$fontColor: #4c4c4c;
+
+
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 62.5%; }
+
+body{
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height: 1.6;
+  letter-spacing: 0.1em; 
+  background-color: $baseColor;
+}
+
+a {
+  @include link-colors($keyColor, darken($keyColor, 10%), lighten($keyColor, 5%), darken($keyColor, 10%));
+  text-decoration: none;
+}
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center;
+}
+
+/* Layout
+------------------------------------------------------------*/
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Font
+------------------------------------------------------------*/
+.abel {
+  font-family: 'Abel', sans-serif;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+ // work
+#work {
+  .container {
+    @include flex-direction(row);     // スキルボックスを横に並べる
+    justify-content: space-between;
+    display: flex;
+    }
+  }
+
+
+
+ /* body
+  ------------------------------------------------------------*/
+//header
+
+header{
+  .box{
+  background-color: $baseColor;
+  text-align: center;
+  display: block;
+  height: 500px;
+  max-width: 100%;
+  background-position: center center;
+  }
+}
+
+//contents
+h1{
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  padding: 3px;
+}
+#work{
+  background-color: $baseColor;
+}
+#work {
+  .container{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  background-color: $baseColor;
+  padding: 10px;
+  }
+}
+
+#work {
+  .text-center{
+  -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 32%;
+    padding: 20px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    background-color: $subColor;
+  }
+}
+//contact
+#botton{
+  background-color: $subColor;
+  margin: 10px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+h3{
+  text-align: center;
+  padding: 0px;
+  margin: auto;
+  }
+}
+#botton {
+  .text-center{
+  display: block;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  padding: 0;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+    background-color: $fontColor;
+  }
+}
+
+
+//footer
+footer{
+  text-align: center;
+  background-color: $baseColor;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  #work{
+  .container {
+    flex-direction: column;
+  div{
+    width: 100%;
+  
+  }
+  }
+ }
+}
+@media (max-width: 768px) {
+  header{
+    height: 250px;
+  }
+}
