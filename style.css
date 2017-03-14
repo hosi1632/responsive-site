@@ -6,7 +6,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  color: #4c4c4c;
+  color: #fff;
   font-size: 1.4rem;
   font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   line-height: 1.6;
@@ -51,15 +51,15 @@ a {
 
 /* body
  ------------------------------------------------------------*/
-header .box {
-  background-color: #fff;
-  text-align: center;
-  display: block;
+header .topbox {
+  background-image: url("./images/ken.png");
   height: 500px;
-  max-width: 100%;
+  width: 100%;
+  background-size: cover;
   background-position: center center; }
 
 h1 {
+  color: #123;
   text-align: center;
   display: block;
   margin-left: auto;
@@ -112,9 +112,10 @@ h1 {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background-color: #4c4c4c; }
+  background-color: #fff; }
 
 footer {
+  color: #123;
   text-align: center;
   background-color: #fff;
   margin: auto; }
@@ -125,7 +126,7 @@ footer {
     #work .container div {
       width: 100%; } }
 @media (max-width: 768px) {
-  header {
+  header .topbox {
     height: 250px; } }
 
 /*# sourceMappingURL=style.css.map */

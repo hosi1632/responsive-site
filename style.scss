@@ -8,7 +8,7 @@ $baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino 
 $baseColor: #fff;
 $subColor: #000;
 $keyColor: #123;
-$fontColor: #4c4c4c;
+$fontColor: #fff;
 
 
 
@@ -70,18 +70,19 @@ a {
 //header
 
 header{
-  .box{
-  background-color: $baseColor;
-  text-align: center;
-  display: block;
+  .topbox {
+  background-image: url("./images/ken.png");
   height: 500px;
-  max-width: 100%;
+  width: 100%;
+  background-size: cover;
   background-position: center center;
+
   }
 }
 
 //contents
 h1{
+  color:$keyColor;
   text-align: center;
   display: block;
   margin-left: auto;
@@ -149,6 +150,7 @@ h3{
 
 //footer
 footer{
+  color:$keyColor;
   text-align: center;
   background-color: $baseColor;
   margin: auto;
@@ -167,6 +169,8 @@ footer{
 }
 @media (max-width: 768px) {
   header{
+    .topbox{
     height: 250px;
+    }
   }
 }
