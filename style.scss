@@ -81,13 +81,14 @@ header{
 }
 
 //contents
+#work{
 h1{
   display: block;
   text-align: center;
-  margin: auto;
-  width: 30%;
-  padding: 0;
+  padding: 20px;
+  margin: 10px;
   color:$keyColor;
+ }
 }
 #work{
   background-color: $baseColor;
